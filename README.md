@@ -4,13 +4,13 @@ This is an excerice from a potential employer. The task is to improve a pre-exis
 
 ## Exercise
 
-You client is looking to improve their site which is shows two pages, <a href="/people">People</a>  and <a href="/vehicles">Vehicles</a>.
+You client is looking to improve their site which is shows two pages, People and Vehicles.
 
 However the client is looking for a way of better understanding both the people and vehicles in aggregate; and also the relation between the two.
 
 Your task:
-1. On the <a href="/people/1">Person</a> page the client wants to see a list of vehicles associated with that person where applicable
-2. We need a visualization on the <a href="">home</a> page which shows the relation between **mass** and **height** for all people.
+1. On the Person page the client wants to see a list of vehicles associated with that person where applicable
+2. We need a visualization on the home page which shows the relation between **mass** and **height** for all people.
     1. The relationship should be easy to interpret
     2. It should be visually appealing
     3. This is no limitation on libraries or ways of visualizing this
