@@ -1,0 +1,39 @@
+
+<div v-show="people.length" id="people">
+  <h1 class="people-h1">People</h1>
+
+  <div class="summary people-summary">
+    <div class="people-data">
+      <strong>Count:</strong>
+      <p>{{people.length}}</p>
+    </div>
+    <div class="people-data">
+      <strong>Avg Height:</strong>
+      <p>{{peopleSummary.avgHeight}}</p>
+    </div>
+    <div class="people-data">
+      <strong>Avg Weight:</strong>
+      <p>{{peopleSummary.avgMass}}</p>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input class="form-control" placeholder="Filter people..." v-model="peopleFilter">
+  </div>
+
+  <transition-group
+    tag="div"
+    class="list-group"
+    :css="false"
+    @before-enter="handleBeforeEnter"
+    @enter="handleEnter">
+    <router-link v-if="filteredPeople.length"
+                 class="list-group-item people-list-item"
+                 v-for="(person, index) in filteredPeople"
+                 :key="index"
+                 :data-index="index"
+                 :to="{ name: 'people', params: { id: getPersonLinkId( person ) }}">
+      {{ person.name }}
+    </router-link>
+  </transition-group>
+</div>

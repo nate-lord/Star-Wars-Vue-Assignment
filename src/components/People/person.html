@@ -1,0 +1,17 @@
+<transition
+  name="person-appear-animation"
+  enter-active-class="animated flipInX">
+  <div v-if="person.name" id="person">
+    <div class="card card-block">
+      <h1 class="card-title person-h1" >{{ person.name }}</h1>
+      <div class="main">
+        <p class="card-text">Height: {{ person.height }}</p>
+        <p class="card-text">Weight: {{ person.mass }}</p>
+        <p class="card-text">Gender: {{ person.gender }}</p>
+        <template v-if="vehicles.length">
+          <p class="card-text">Vehicles: <span class="inline-list-item" v-for="vehicle in vehicles">{{ vehicle.data.name }}</span></p>
+        </template>
+      </div>
+    </div>
+  </div>
+</transition>

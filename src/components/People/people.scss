@@ -1,0 +1,51 @@
+$mainBreak: 768px;
+$sw-blue: rgb(32, 129, 249);
+$sw-orange: rgb(249, 152, 32);
+$sw-grey: rgb(187, 187, 187);
+$sw-navy: rgb(9, 38, 74);
+$sw-white: #ffffff;
+
+#people {
+  color: $sw-navy;
+  padding: 0 15px;
+
+	.people-h1 {
+		font-weight: bold;
+  }
+  
+  .people-summary {
+    display: flex;
+  }
+
+  .people-data {
+    width: 33.33%;
+
+    strong {
+      display: block;
+      font-family: 'helvetica';
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+    p {
+      font-family: 'menlo';
+      font-size: 12px;
+    }
+  }
+
+	.people-list-item {
+    color: $sw-blue;
+    border-radius: 0;
+    transition: color 200ms,
+                background-color 200ms;
+
+    &:hover {
+      color: #fff;
+      background-color: $sw-blue;
+    }
+
+    &:active {
+      background-color: $sw-orange;
+    }
+	}
+}

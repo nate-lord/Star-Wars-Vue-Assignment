@@ -1,0 +1,81 @@
+$mainBreak: 768px;
+$sw-blue: rgb(32, 129, 249);
+$sw-orange: rgb(249, 152, 32);
+$sw-grey: rgb(187, 187, 187);
+$sw-navy: rgb(9, 38, 74);
+$sw-white: #ffffff;
+
+::selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: 0px 0px 0px;
+}
+
+::-moz-selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: 0px 0px 0px;
+}
+
+::-webkit-selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: 0px 0px 0px;
+}
+
+@font-face {
+  font-family: 'menlo';
+  src: url('../assets/fonts/Menlo-Regular.woff2') format('woff2'),
+      url('../assets/fonts/Menlo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'menlo';
+  src: url('../assets/fonts/Menlo-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Menlo-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../assets/fonts/HelveticaLTStd-Roman.woff2') format('woff2'),
+      url('../assets/fonts/HelveticaLTStd-Roman.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../assets/fonts/HelveticaLTStd-Bold.woff2') format('woff2'),
+      url('../assets/fonts/HelveticaLTStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+body {
+  padding-top: 60px;
+  font-family: 'helvetica';
+}
+
+#app .container {
+  max-width: 650px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.br {
+  &:before {
+    content: '\a';
+    white-space: pre;
+  }
+}

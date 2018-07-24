@@ -1,0 +1,25 @@
+$mainBreak: 768px;
+$sw-blue: rgb(32, 129, 249);
+$sw-orange: rgb(249, 152, 32);
+$sw-grey: rgb(187, 187, 187);
+$sw-navy: rgb(9, 38, 74);
+$sw-white: #ffffff;
+
+#navbar {
+	background-color: $sw-blue;
+	padding: 0;
+
+	.navbar-nav {
+    @media( max-width: $mainBreak ) {
+      flex-direction: row;
+    }
+	}
+
+	.nav-link {
+		padding: 10px;
+		color: $sw-white;
+		font-family: 'menlo';
+		font-weight: bold;
+		font-size: 12px;
+	}
+}

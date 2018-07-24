@@ -1,0 +1,47 @@
+$mainBreak: 768px;
+$sw-blue: rgb(32, 129, 249);
+$sw-orange: rgb(249, 152, 32);
+$sw-grey: rgb(187, 187, 187);
+$sw-navy: rgb(9, 38, 74);
+$sw-white: #ffffff;
+
+#app {
+  .card {
+    border-radius: 0;
+    border-color: $sw-navy;
+    box-shadow: 1px 1px 0 $sw-navy,
+                2px 2px 0 $sw-navy,
+                3px 3px 0 $sw-navy,
+                4px 4px 0 $sw-navy;
+    padding: 2px;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media( max-width: 730px ) {
+      max-width: calc( 100% - 30px );
+    }
+  }
+
+  .person-h1 {
+    font-weight: bold;
+    color: $sw-navy;
+    margin: 0;
+    padding: 7px 20px 5px 20px;
+    border-bottom: 3px solid $sw-navy;
+  }
+
+  .main {
+    padding: 20px;
+    color: $sw-navy;
+  }
+
+  .card-text {
+    font-family: 'menlo';
+  }
+
+  .inline-list-item + .inline-list-item {
+    &:before {
+      content: ', ';
+    }
+  }
+}
