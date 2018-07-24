@@ -1,13 +1,6 @@
-# Starter Exercise
-Download and install this repo to get started on the below exercise.
+## About
 
-### Getting started
-
-Clone the repo
-
-Run `npm install`
-
-Run `npm start`
+This is an excerice from a potential employer. The task is to improve a pre-existing Vue project.
 
 ## Exercise
 
